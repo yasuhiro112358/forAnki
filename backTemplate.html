@@ -1,0 +1,33 @@
+<!--
+	- Back Template
+    - For Korean language. 
+-->
+
+
+<div>
+	<div class="word">{{Word}}</div>
+  <div>[sound:{{Word audio filename}}]</div>
+	<div class="subtitle">{{Sentence}}</div>
+	<div>[sound:{{Sentence audio filename}}]</div>
+</div>
+
+
+<div>
+	<hr>
+
+	<div class="word">{{Lemma}}</div>
+	<div class="PoS">{{Part of speech}}</div>
+	<div class="definition">{{Word definition}}</div>
+
+	<hr>
+
+	<div class="searchBtn"><a href="mkdictionaries:///?text={{Lemma}}&category=kr-ja">韓和辞書</a></div>
+
+  <div class="searchBtn"><a href="https://en.wikipedia.org/wiki/{{Lemma}}">WIKIPEDIA</a></div>
+
+	<div class="searchBtn"><a href="https://www.google.co.jp/search?q={{Lemma}}&tbm=isch
+">Google</a></div>
+
+</div>
+
+

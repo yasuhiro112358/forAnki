@@ -1,0 +1,54 @@
+/*
+    - Styling
+    - For Korean language
+*/
+
+
+/* カード全体のスタイル */
+.card {
+	font-family: serif;
+	font-size: 16px;
+	text-align: center;
+	color: black;
+	background-color: white;
+}
+
+/* ヘッダのスタイル */
+.header {
+	font-size: 12px;
+	color: gray;
+}
+
+/* 単語のスタイル */
+.word {
+	/* font-family: sans-serif; */
+	font-size: 40px;
+}
+
+/* 字幕のスタイル */
+.subtitle {
+	font-size: 24px;
+  text-align: left;
+}
+
+/* 品詞のスタイル */
+.PoS {
+	font-size: 16px;
+	color: gray;
+}
+
+/* 意味のスタイル */
+.definition {
+	font-size: 24px;
+  text-align: left;
+}
+
+/* 検索ボタンのスタイル */
+.searchBtn {
+	font-size: 20px;
+  padding: 8px;
+  margin: 8px 0;
+  background: #aaa;
+  border-radius: 8px;
+}
+
