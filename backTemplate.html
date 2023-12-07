@@ -3,31 +3,42 @@
     - For Korean language. 
 -->
 
-
+<!-- Show the front side -->
 <div>
-	<div class="word">{{Word}}</div>
-  <div>[sound:{{Word audio filename}}]</div>
-	<div class="subtitle">{{Sentence}}</div>
-	<div>[sound:{{Sentence audio filename}}]</div>
+	<div id="word">{{Word}}</div>
+	<div id="sentence">{{Sentence}}</div>
 </div>
 
+<hr>
 
+<!-- Show the back side -->
 <div>
-	<hr>
+	<div id="lemma">{{Lemma}}</div>
+	<div id="PoS">{{Part of speech}}</div>
+	<div id="definition">{{Word definition}}</div>
+</div>
 
-	<div class="word">{{Lemma}}</div>
-	<div class="PoS">{{Part of speech}}</div>
-	<div class="definition">{{Word definition}}</div>
+<hr>
 
-	<hr>
+<!-- Show the button section -->
+<div>
+    <!-- <div class="searchBtn"><a href="https://ko.dict.naver.com/#/search?range=all&query={{Lemma}}">NAVER 사전</a></div>
 
 	<div class="searchBtn"><a href="mkdictionaries:///?text={{Lemma}}&category=kr-ja">韓和辞書</a></div>
 
-  <div class="searchBtn"><a href="https://en.wikipedia.org/wiki/{{Lemma}}">WIKIPEDIA</a></div>
+    <div class="searchBtn"><a href="https://en.wikipedia.org/wiki/{{Lemma}}">WIKIPEDIA</a></div>
 
-	<div class="searchBtn"><a href="https://www.google.co.jp/search?q={{Lemma}}&tbm=isch
-">Google</a></div>
+	<div class="searchBtn"><a href="https://www.google.co.jp/search?q={{Lemma}}&tbm=isch">Google</a></div> -->
 
+
+    <a href="https://ko.dict.naver.com/#/search?range=all&query={{Lemma}}" class="searchBtn">NAVER 사전</a>
+
+	<a href="mkdictionaries:///?text={{Lemma}}&category=kr-ja" class="searchBtn">韓和辞書</a>
+
+    <a href="https://en.wikipedia.org/wiki/{{Lemma}}" class="searchBtn">WIKIPEDIA</a>
+
+	<a href="https://www.google.co.jp/search?q={{Lemma}}&tbm=isch" class="searchBtn">Google</a>
 </div>
+
 
 

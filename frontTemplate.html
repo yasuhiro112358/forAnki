@@ -4,11 +4,42 @@
 -->
 
 <div>
-	<div class="word">{{Word}}</div>
-  <div>[sound:{{Word audio filename}}]</div>
-	<div class="subtitle">{{Sentence}}</div>
-	<div>[sound:{{Sentence audio filename}}]</div>
+	<div id="word">{{Word}}</div>
+	<div id="sentence">{{Sentence}}</div>
 </div>
 
+<script>
+	// Play sound of word(s)
+	var wordElement = document.getElementById("word");
+	window.setTimeout(function() {
+		speak(wordElement.innerText, function() {
+			// Call the second function after the first one finishes
+			// Adjust the delay as needed
+			window.setTimeout(function() {
+				var sentenceElement = document.getElementById("sentence");
+				speak(sentenceElement.innerText);
+			}, 500);
+		});
+	}, 500);
 
+	function speak(word, callback) {
+		var speech = new SpeechSynthesisUtterance();
+		speech.text = word;
+		speech.volume = 0.5;
+		speech.rate = 0.5;
+		speech.pitch = 1;
+		speech.lang = "ko-KR"; // Language code for Korean
 
+		// Set up an event listener for the end of the speech
+		speech.onend = function() {
+			// Call the callback function if provided
+			if (typeof callback === "function") {
+				callback();
+			}
+		};
+
+		speechSynthesis.cancel();
+		speechSynthesis.speak(speech);
+	}
+
+</script>

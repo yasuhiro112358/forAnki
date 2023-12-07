@@ -11,44 +11,49 @@
 	text-align: center;
 	color: black;
 	background-color: white;
+    /* font-family: sans-serif; */
 }
 
 /* ヘッダのスタイル */
-.header {
+/* .header {
 	font-size: 12px;
 	color: gray;
-}
+} */
 
-/* 単語のスタイル */
-.word {
-	/* font-family: sans-serif; */
+#word {
 	font-size: 40px;
 }
 
-/* 字幕のスタイル */
-.subtitle {
+#sentence {
 	font-size: 24px;
-  text-align: left;
+    text-align: left;
 }
 
-/* 品詞のスタイル */
-.PoS {
+#lemma {
+	font-size: 40px;
+}
+
+#PoS {
 	font-size: 16px;
 	color: gray;
 }
 
-/* 意味のスタイル */
-.definition {
+#definition {
 	font-size: 24px;
-  text-align: left;
+    text-align: left;
 }
 
 /* 検索ボタンのスタイル */
 .searchBtn {
+    display: block;
 	font-size: 20px;
-  padding: 8px;
-  margin: 8px 0;
-  background: #aaa;
-  border-radius: 8px;
+    padding: 8px;
+    margin: 8px 0;
+    background: gray;
+    border-radius: 8px;
 }
 
+/* Prevent default blue color */
+.searchBtn a {
+    color: black;
+}
